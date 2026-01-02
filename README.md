@@ -31,8 +31,8 @@ Simplified_App_Store/
 
 ### Log
 Represents a version update log for an app.
-- **Attributes**: version number, list of fixes
-- **Methods**: `addFix()`, `getVersion()`, `getFixes()`, `toString()`
+- **Attributes**: version number, fixes (comma-separated string), number of fixes, max fixes (10)
+- **Methods**: `addFix()`, `getVersion()`, `getFixes()`, `getNumberOfFixes()`, `toString()`
 
 ### App
 Represents an application in the store.
@@ -51,7 +51,7 @@ Manages a collection of apps for a specific regional branch.
 - **Methods**:
   - `addApp(App app)` - Add an app to the store
   - `getApp(String name)` - Retrieve app by name
-  - `getStableApps(int x)` - Get apps with at least x updates
+  - `getStableApps(int x)` - Get apps with x or more updates
 
 ### Account
 Represents a user account linked to a specific store.
