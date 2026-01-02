@@ -83,6 +83,8 @@ The project includes JUnit tests to verify functionality:
 ```bash
 # Ensure JUnit is in your classpath, then run:
 java -cp bin:path/to/junit.jar org.junit.runner.JUnitCore junit_tests.StarterTests
+
+# Alternatively, you can use Maven or Gradle to manage dependencies and run tests
 ```
 
 ## Usage Example
@@ -91,7 +93,7 @@ java -cp bin:path/to/junit.jar org.junit.runner.JUnitCore junit_tests.StarterTes
 // Create an app store
 AppStore canadianStore = new AppStore("Canada", 100);
 
-// Create an app
+// Create an app (name, max number of ratings allowed)
 App app = new App("GoodNotes 5", 15);
 app.releaseUpdate("5.7.31");
 app.getUpdateHistory()[0].addFix("Better logging");
